@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- O que é um HTML?
+
+    HYPERTEXT - texto com links
+
+    MARKUP - texto com marcações (tags)
+    <tags>
+
+    LANGUAGE - meio de se comunicar de determinada maneira.
+    Possui sintaxe específica para escrita.
+-->
+
+<html>
+  <head>
+    <!--Contém as configurações da página-->
+    <title>Doação de Sangue</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--Contém todo o conteúdo que é visivel ao usuário-->
+    <header>
+      <!--Conteúdo do topo-->
+      <img class="logo" src="logo.png" alt="Imagem escrito DOE" />
+      <h2>A sua doação importa</h2>
+      <p>Até 3 vidas com 1 doação</p>
+      <p>Mais de 38 mil doações são necessárias todos os dias</p>
+      <p>Apenas 1,9% da população brasileira, doa sangue</p>
+
+      <button>Quero ajudar</button>
+    </header>
+
+    <section class="form hide">
+      <h2>Entre na lista de doadores</h2>
+      <form action="/">
+        <input type="text" name="name" placeholder="Nome Completo" />
+
+        <input type="text" name="email" placeholder="Email" />
+
+        <input type="text" name="blood" placeholder="Tipo Sanguineo" />
+
+        <button>Quero Ajudar</button>
+      </form>
+    </section>
+
+    <main>
+      <!--Conteúdo central-->
+      <h2>Últimos <span>doadores</span></h2>
+
+      <section class="donors">
+        <!--Seção-->
+        <div class="donor">
+          <!--Container utilizado para agrupar-->
+          <div class="blood">AB+</div>
+          <p>Fulani dos Santos</p>
+        </div>
+
+        <div class="donor">
+          <!--Container utilizado para agrupar-->
+          <div class="blood">B+</div>
+          <p>Ciclani Cardoso</p>
+        </div>
+
+        <div class="donor">
+          <!--Container utilizado para agrupar-->
+          <div class="blood">A-</div>
+          <p>Beltrani Figueira</p>
+        </div>
+
+        <div class="donor">
+          <!--Container utilizado para agrupar-->
+          <div class="blood">A-</div>
+          <p>Joni Albuquerque</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!--Rodapé-->
+      Com ❤ Rocketseat
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
